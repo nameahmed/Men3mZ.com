@@ -1,0 +1,20 @@
+.ice {
+  margin: auto;
+  width: 100px;
+  height: 150px;
+  background-color: #f0dd91;
+  position: relative;
+  border-radius: 50px 50px 20px 20px;
+}
+.ice::after {
+  content: "";
+  width: 25px;
+  height: 50px;
+  background-color: #ec4040;
+  position: absolute;
+  bottom: -50px;
+  left: 50px;
+  transform: translateX(-50%);
+  border-radius: 0 0 6px 6px;
+  z-index: -1;
+}
